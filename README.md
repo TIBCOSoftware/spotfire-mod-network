@@ -1,5 +1,7 @@
 # Network Chart Mod for TIBCO Spotfire®
 
+<img src="assets/network.png" width="60%"/>
+
 Visualizes relationships and connections between data points. Useful for display of data, where multiple types of relationships exist, by providing an interactive and configurable network representation. To perform an in-depth analysis of relationships within the data, panning and zooming capabilities are available.
 
 This network chart is a force-directed chart, which means it simulates forces between the network nodes to render a visually appealing and understandable representation of a network.
