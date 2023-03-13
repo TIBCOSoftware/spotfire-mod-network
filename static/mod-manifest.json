@@ -1,0 +1,174 @@
+{
+    "apiVersion": "1.2",
+    "version": "2.0.0",
+    "name": "Network Chart",
+    "id": "datascience-mods-networkchart",
+    "icon": "icon.svg",
+    "properties": [
+        {
+            "name": "chart-type",
+            "type": "string",
+            "defaultValue": "forced-network"
+        },
+        {
+            "name": "network_strength",
+            "type": "integer",
+            "defaultValue": "-150"            
+        },
+        {
+            "name": "display_labels",
+            "type": "boolean",
+            "defaultValue": true              
+        },
+        {
+            "name": "network_type",
+            "type": "string",
+            "defaultValue": "living"           
+        },
+        {
+            "name": "apply_color",
+            "type": "string",
+            "defaultValue": "nodes"           
+        },
+        {
+            "name": "aggregation_warning",
+            "type": "boolean",
+            "defaultValue": "true"           
+        }
+    ],
+    "dataViewDefinition": {
+        "colorAxis": {
+            "mode": "dual",
+            "allowNonAggregatingMeasures": true,
+            "dropTarget": {
+                "icon": "Color",
+                "description": "Color by {0}"
+            }
+        },
+        "axes": [
+            {
+                "name": "Source",
+                "mode": "categorical",
+                "placement": "bottom",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true
+            },
+            {
+                "name": "Target",
+                "mode": "categorical",
+                "placement": "bottom",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true
+            },
+            {
+                "name": "Label By",
+                "mode": "categorical",
+                "placement": "none",
+                "allowMultipleMeasures": true,
+                "allowNonAggregatingMeasures": true,
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "Label Size By",
+                "mode": "continuous",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "Label Color By",
+                "mode": "categorical",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "dropTarget": {
+                    "icon": "Color",
+                    "description": "Color Label by {0}"
+                },
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "Size By",
+                "mode": "continuous",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "dropTarget": {
+                    "icon": "MarkerSize",
+                    "description": "Size by {0}"
+                },
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "End Node Size By",
+                "mode": "continuous",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "dropTarget": {
+                    "icon": "MarkerSize",
+                    "description": "End Node Size by {0}"
+                },
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "End Node Color By",
+                "mode": "categorical",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "dropTarget": {
+                    "icon": "Color",
+                    "description": "End Node Color by {0}"
+                },
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "Line Width",
+                "mode": "continuous",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "dropTarget": {
+                    "icon": "Line",
+                    "description": "Line Width by {0}"
+                },
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            },
+            {
+                "name": "Other Color",
+                "mode": "categorical",
+                "placement": "none",
+                "allowMultipleMeasures": false,
+                "allowNonAggregatingMeasures": true,
+                "dropTarget": {
+                    "icon": "Color",
+                    "description": "Color Line by {0}"
+                },
+                "automaticConfiguration": {
+                    "expressionHeuristics": "none"                
+                } 
+            }     
+        ]
+    },
+    "files": [
+        "index.html",
+        "main.css",
+        "bundle.js"
+    ]
+}

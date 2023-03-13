@@ -1,0 +1,210 @@
+html,
+body,
+#mod-container {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+svg text {
+    cursor: pointer;
+}
+
+#error_container {
+    position: absolute;
+    left: 25%;
+    top: 12px;
+    width: 50%;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    opacity: 0.9;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    font-size: 1.1em;
+    display: none;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+}
+
+#error_container #aggregation_warning{
+  padding: 4px;
+  margin-top: 6px;
+  font-size: 1.1em;
+}
+
+#mod-container,
+.node {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 0.3px;
+}
+
+#mod-container,
+.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 0.5px;
+}
+
+#chart-controls {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 8px 4px;
+    padding: 4px;
+    text-align: middle;
+    color: rgb(29, 32, 32);
+}
+
+#show-controls{
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
+  border: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  border-radius: 4px;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,.1), 0 4px 5px 0 rgba(0,0,0,.1);
+}
+
+#chart-controls .button {
+  cursor: pointer;
+  padding: 8px 8px 6px 8px;
+  border-radius: 4px;
+}
+
+#showhide-controls {
+  cursor: default;
+  border: none;
+  padding: 0px 8px 12px 6px;
+  border-radius: 4px;
+}
+
+#showhide-controls div{
+  padding: 8px 4px 0 2px;
+  font-size: 13px;
+}
+
+#showhide-controls div input {
+  height: 22px;
+  margin: 0px;
+}
+
+#showhide-controls div select {
+  height: 22px;
+  margin: 0px;
+  font-size: 14px;
+  background-image: linear-gradient(to bottom, #FFFFFF, #F0F1F2);
+  border: solid 1px #BDBFC3;
+  border-radius: 3px;
+  width: 90px;
+}
+
+#showhide-controls div select:focus{
+  outline: none;
+}
+
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+}
+
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2497E3;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 16px;
+    width: 16px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2497E3;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2497E3;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #2497E3;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #2497E3;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #2497E3;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #2497E3;
+  }

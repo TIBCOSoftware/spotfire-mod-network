@@ -1,0 +1,23 @@
+{
+    "name": "spotfire-network-chart",
+    "version": "2.0.0",
+    "description": "This network chart built using D3 allows visualisation of relationships and connections between data points. It is highly useful in viewing data where multiple types of relationships may exist between data.",
+    "main": "index.js",
+    "scripts": {
+        "server": "node development-server.js dist",
+        "build": "webpack",
+        "build-watch": "webpack --watch",
+        "start": "npm run build-watch"
+    },
+    "author": "Colin Gray",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "d3": "^5.16.0",
+        "tinycolor2": "^1.4.2",
+        "live-server": "^1.2.1",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "copy-webpack-plugin": "^5.1.1"
+    }
+}
