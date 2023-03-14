@@ -10,6 +10,8 @@ Network charts have many use cases. You can use them to analyze connections betw
 
 ## Installation & Use
 
+[Download latest version](https://github.com/TIBCOSoftware/spotfire-mod-network/releases)
+
 The [Wiki](https://github.com/TIBCOSoftware/spotfire-mod-network/wiki) contains step-by-step instruction on how to install and use this Mod in TIBCO Spotfire®.
 
 ## Building the Project
