@@ -1,4 +1,4 @@
-# Network Chart Mod for TIBCO Spotfire®
+# Network Chart Mod for Spotfire®
 
 <img src="assets/network.png" width="60%"/>
 
@@ -10,9 +10,9 @@ Network charts have many use cases. You can use them to analyze connections betw
 
 ## Installation & Use
 
-[Download latest version](https://github.com/TIBCOSoftware/spotfire-mod-network/releases)
+[Download latest version](https://github.com/spotfiresoftware/spotfire-mod-network/releases)
 
-The [Wiki](https://github.com/TIBCOSoftware/spotfire-mod-network/wiki) contains step-by-step instruction on how to install and use this Mod in TIBCO Spotfire®.
+The [Wiki](https://github.com/spotfiresoftware/spotfire-mod-network/wiki) contains step-by-step instruction on how to install and use this Mod in Spotfire®.
 
 ## Building the Project
 
@@ -23,7 +23,7 @@ In a terminal window:
 In a new terminal window:
 - `npm run server`
 
-## About Mods for TIBCO Spotfire®
+## About Mods for Spotfire®
 -   [TIBCO Community Exchange](https://community.tibco.com/s/global-search/%40uri#q=mod%20for%20tibco%20spotfire&t=Exchange&sort=date%20descending): A safe and trusted place to discover ready-to-use mods
 -   [Developer documentation](https://tibcosoftware.github.io/spotfire-mods/docs/): Introduction and tutorials for mods developers
--   [Mods examples made by TIBCO](https://github.com/TIBCOSoftware/spotfire-mods/releases/latest): A public repository for examples projects
+-   [Mods examples](https://github.com/TIBCOSoftware/spotfire-mods/releases/latest): A public repository for examples projects
